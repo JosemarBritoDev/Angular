@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>AngularJS</title>
+</head>
+<body ng-app="myApp">
+    <div ng-init="a=5; b=10; c=3; d=6">
+        App AngularJS: {{ 5+3 }} <br>
+        angular: {{ a * b + c - d }}
+    </div>
+
+    <div ng-init="isVisible = false">
+        <span ng-show="isVisible">Josemar Brito</span>
+
+    </div>
+
+    <ul ng-init="myList = [1,2,3,4,2]">
+        <li ng-repeat="item in myList track by $index"> {{ item}}- {{$index}}
+
+        </li>
+
+    </ul>
+    HTML Comum: {{ 5+ 2}}
+
+    <p>
+        {{ a*c}}
+    </p>
+
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular.min.js" ></script>
+
+<script>
+    angular.module('myApp', []);
+</script>
+
+
+
+</body>
+</html>
